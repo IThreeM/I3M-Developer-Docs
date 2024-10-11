@@ -11,7 +11,22 @@ default-theme = "navy"
 preferred-dark-theme = "navy"
 # git-repository-url = "https://github.com/IThreeM/I3M-Developer-Docs"
 git-repository-icon = "fa-github"
+favicon = "theme/favicon.svg" # Path to your custom SVG favicon
+
+# Customize appearance
+[theme]
+# Choose a path relative to `src`
+favicon = "theme/favicon.svg" # Ensures the custom favicon persists across builds
+title = "IThreeM - I3M Developer Docs"
 
 [output.html.fold]
 enable = true
 level = 7
+
+[preprocessor.graphviz]
+command = "dot"
+options = ["-Tsvg"]
+
+[output.html.search]
+enable = true
+use-boolean-and = false
