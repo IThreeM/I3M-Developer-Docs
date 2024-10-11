@@ -3,11 +3,16 @@ IThreeM Developer Docs Guide Book
 
 Run the following commands to start the local development environment:
 
+## Usage
 ```bash
-dfx start --clean --background
+cargo install i3x-o1
 ```
+- **Run Developer Docs Locally**:
+  ```bash
+  i3x-o1 run
+  ```
 
-```bash
-dfx deploy
-```
-
+- **Deploy to ICP**:
+  ```bash
+  i3x-o1 deploy
+  ```
