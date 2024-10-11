@@ -1,11 +1,14 @@
-IThreeM Developer Docs Book
+<h1 align="center" style="font-size: 2.5em;">
+  <img src="./Developer-Docs/IThreeM-Favicon.png" style="vertical-align: middle; margin-right: 10px;">
+  <strong>IThreeM - I3M Developer Documentation</strong>
+</h1>
 
-Practical reference and user guides for [Developer Docs](https://github.com/IThreeM/I3M-Developer-Docs) and its editor [I3M](https://github.com/IThreeM/I3M-Engine-Core/tree/main/editor).
+Practical reference and user guides for [I3M Developer Docs](https://github.com/IThreeM/I3M-Developer-Docs) and its editor [I3M Engine Editor](https://github.com/IThreeM/I3M-Engine-Core/tree/main/editor).
 
 > ⚠️ Tip: If you want to start using the engine as fast as possible - read this [chapter](./beginning/scripting.md).
 
 **Warning:** The book is in early development stage, you can help to improve it by making a contribution in its
-[repository](https://github.com/IThreeM/I3M-Developer-Docs.github.io). Don't be shy, every tip is helpful!
+[repository](https://github.com/IThreeM/I3M-Developer-Docs).
 
 ## Engine Version
 

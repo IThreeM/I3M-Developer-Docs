@@ -3,16 +3,15 @@ authors = ["Dedan Okware"]
 language = "en"
 multilingual = false
 src = "src"
-title = "I3M Developer Docs"
+title = "IThreeM - I3M Developer Docs"
 
 [output.html]
 mathjax-support = true
 default-theme = "navy"
 preferred-dark-theme = "navy"
-git-repository-url = "https://github.com/IThreeM/I3M-Developer-Docs.github.io"
+# git-repository-url = "https://github.com/IThreeM/I3M-Developer-Docs"
 git-repository-icon = "fa-github"
 
 [output.html.fold]
 enable = true
 level = 7
-

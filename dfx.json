@@ -1,9 +1,5 @@
 {
     "canisters": {
-        "i3m-dev-docs-backend": {
-            "main": "src/i3m-dev-docs-backend/main.mo",
-            "type": "motoko"
-        },
         "i3m-dev-docs-frontend": {
             "type": "assets",
             "source": [
