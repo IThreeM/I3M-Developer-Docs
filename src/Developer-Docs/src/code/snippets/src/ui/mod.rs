@@ -1,0 +1,132 @@
+pub mod border;
+pub mod button;
+pub mod canvas;
+pub mod check_box;
+pub mod custom;
+pub mod decorator;
+pub mod expander;
+pub mod font;
+pub mod grid;
+pub mod image;
+pub mod numeric;
+pub mod rendering;
+pub mod screen;
+pub mod scroll_bar;
+pub mod scroll_panel;
+pub mod scroll_viewer;
+pub mod stack_panel;
+pub mod tab;
+pub mod text;
+pub mod text_box;
+pub mod vector_image;
+pub mod window;
+pub mod wrap_panel;
+
+use i3m::asset::manager::ResourceManager;
+use i3m::core::reflect::Reflect;
+use i3m::gui::button::ButtonBuilder;
+use i3m::gui::grid::{Column, GridBuilder, Row};
+use i3m::gui::image::ImageBuilder;
+use i3m::gui::text::TextBuilder;
+use i3m::gui::widget::WidgetBuilder;
+use i3m::gui::UserInterface;
+use i3m::resource::texture::Texture;
+use i3m::{
+    core::pool::Handle,
+    core::reflect::prelude::*,
+    core::visitor::prelude::*,
+    gui::{button::ButtonMessage, message::UiMessage, UiNode},
+    plugin::{Plugin, PluginContext},
+};
+
+// ANCHOR: message_passing
+#[derive(Visit, Reflect, Debug)]
+struct MyPlugin {
+    button: Handle<UiNode>,
+}
+
+impl Plugin for MyPlugin {
+    fn on_ui_message(&mut self, _context: &mut PluginContext, message: &UiMessage) {
+        if let Some(ButtonMessage::Click) = message.data() {
+            if message.destination() == self.button {
+                println!("The button was clicked!");
+            }
+        }
+    }
+}
+// ANCHOR_END: message_passing
+
+// ANCHOR: create_fancy_button
+fn create_fancy_button(
+    ui: &mut UserInterface,
+    resource_manager: ResourceManager,
+) -> Handle<UiNode> {
+    let ctx = &mut ui.build_ctx();
+    ButtonBuilder::new(WidgetBuilder::new())
+        .with_back(
+            ImageBuilder::new(WidgetBuilder::new())
+                .with_texture(
+                    resource_manager
+                        .request::<Texture>("path/to/your/texture")
+                        .into(),
+                )
+                .build(ctx),
+        )
+        .with_text("Click me!")
+        .build(ctx)
+}
+// ANCHOR_END: create_fancy_button
+
+// ANCHOR: create_fancy_button_with_text
+fn create_fancy_button_with_text(
+    ui: &mut UserInterface,
+    resource_manager: ResourceManager,
+) -> Handle<UiNode> {
+    let ctx = &mut ui.build_ctx();
+
+    ButtonBuilder::new(WidgetBuilder::new())
+        .with_content(
+            GridBuilder::new(
+                WidgetBuilder::new()
+                    .with_child(
+                        ImageBuilder::new(WidgetBuilder::new().on_column(0))
+                            .with_texture(resource_manager.request::<Texture>("your_icon").into())
+                            .build(ctx),
+                    )
+                    .with_child(
+                        TextBuilder::new(WidgetBuilder::new().on_column(1))
+                            .with_text("My Button")
+                            .build(ctx),
+                    ),
+            )
+            .add_row(Row::stretch())
+            .add_column(Column::auto())
+            .add_column(Column::stretch())
+            .build(ctx),
+        )
+        .build(ctx)
+}
+// ANCHOR_END: create_fancy_button_with_text
+
+// ANCHOR: create_fancy_button_with_shortcut
+fn create_fancy_button_with_shortcut(
+    ui: &mut UserInterface,
+    resource_manager: ResourceManager,
+) -> Handle<UiNode> {
+    let ctx = &mut ui.build_ctx();
+    let image;
+    ButtonBuilder::new(WidgetBuilder::new())
+        .with_back({
+            image = ImageBuilder::new(WidgetBuilder::new())
+                .with_texture(
+                    resource_manager
+                        .request::<Texture>("path/to/your/texture")
+                        .into(),
+                )
+                .build(ctx);
+            image
+        })
+        .with_text("Click me!")
+        .build(ctx)
+}
+// ANCHOR_END: create_fancy_button_with_shortcut

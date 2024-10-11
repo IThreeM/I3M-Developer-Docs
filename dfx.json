@@ -1,0 +1,25 @@
+{
+    "canisters": {
+        "i3m-dev-docs-backend": {
+            "main": "src/i3m-dev-docs-backend/main.mo",
+            "type": "motoko"
+        },
+        "i3m-dev-docs-frontend": {
+            "type": "assets",
+            "source": [
+                "src/Developer-Docs/book"
+            ],
+            "frontend": {
+                "entrypoint": "index.html"
+            }
+        }
+    },
+    "defaults": {
+        "build": {
+            "args": "",
+            "packtool": ""
+        }
+    },
+    "output_env_file": ".env",
+    "version": 1
+}

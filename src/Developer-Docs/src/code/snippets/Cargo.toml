@@ -1,0 +1,10 @@
+[package]
+name = "i3m-book-code"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+i3m = { git = "https://github.com/IThreeM/I3M-Engine-Core" }
+i3m_engine_core_base = { git = "https://github.com/IThreeM/I3M-Engine-Core" }
+strum = "0.26.0"
+strum_macros = "0.26.0"
