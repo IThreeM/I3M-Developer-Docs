@@ -100,7 +100,7 @@ This is a more or less complete (yet, it can be outdated) list of engine feature
 
 ### Sound
 
-- [High quality binaural sound with HRTF support](https://github.com/IThreeM/I3M-Engine-Core/tree/master/i3m-sound).
+- [High quality binaural sound with HRTF support](https://github.com/IThreeM/I3M-Engine-Core/tree/main/i3m-sound).
 - Generic and spatial sound sources.
 - Built-in streaming for large sounds.
 - Raw samples playback support.
@@ -136,7 +136,7 @@ This is a more or less complete (yet, it can be outdated) list of engine feature
 
 ### User Interface (UI)
 
-- [Advanced node-based UI](https://github.com/IThreeM/I3M-Engine-Core/tree/master/i3m-ui) with lots of widgets.
+- [Advanced node-based UI](https://github.com/IThreeM/I3M-Engine-Core/tree/main/i3m-ui) with lots of widgets.
 - More than 32 widgets
 - Powerful layout system.
 - Full TTF/OTF fonts support.

@@ -5,7 +5,7 @@
   - [Introduction to I3M](./introduction/introduction.md)
   - [System Requirements and Supported Platforms](./introduction/requirements.md)
   - [Basic concepts](./introduction/basic_concepts.md)
-  - [Design Philosophy and Goals](./introduction/philosophy_and_goals.md)
+  - [Design Safety and Goals](./introduction/philosophy_and_goals.md)
   - [Frequently Asked Questions](./introduction/faq.md)
 - [Getting started](./beginning/getting_started.md)
   - [Editor, Plugins and Scripts](./beginning/scripting.md)

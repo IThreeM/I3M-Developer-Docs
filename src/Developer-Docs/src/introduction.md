@@ -1,5 +1,4 @@
 <h1 align="center" style="font-size: 2.5em;">
-  <img src="./Developer-Docs/IThreeM-Favicon.png" style="vertical-align: middle; margin-right: 10px;">
   <strong>IThreeM - I3M Developer Documentation</strong>
 </h1>
 
@@ -12,7 +11,7 @@ Practical reference and user guides for [I3M Developer Docs](https://github.com/
 
 ## Engine Version
 
-I3M Team is trying to keep the book up-to-date with the latest version from `master` branch. If something does not
+I3M Team is trying to keep the book up-to-date with the latest version from `main` branch. If something does not
 compile with the latest release from crates.io, then you need to
 [use the latest engine from GitHub repo](./beginning/scripting.md#using-the-latest-engine-version).
 

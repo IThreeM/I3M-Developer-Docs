@@ -1122,7 +1122,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "fyrox-math"
+name = "i3m-math"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4811e6142fd4c525f171e0851503afc57de4d81a02201e33b630de536bc1bf26"
@@ -1888,7 +1888,7 @@ checksum = "1cbfbe5e3b568920f20dbfa053810bc6d1be08aa96d077c2509da1c9be2217ee"
 dependencies = [
  "arrayvec",
  "fxhash",
- "fyrox-math",
+ "i3m-math",
  "nalgebra",
  "rayon",
  "uvgen",
