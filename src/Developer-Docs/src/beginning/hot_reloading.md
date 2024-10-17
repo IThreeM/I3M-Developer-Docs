@@ -2,9 +2,9 @@
 
 I3M supports code hot reloading (CHR for short), which allows you to recompile the game code while the game is running.
 This functionality significantly reduces iteration times and allows rapid prototyping. This way, Rust becomes a sort of
-"scripting" language, but with all Rust safety and performance guarantees. CHR in action looks like this:
+"scripting" language, but with all Rust safety and performance guarantees:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vq6P3Npydmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+;; <iframe width="560" height="315" src="https://www.youtube.com/embed/vq6P3Npydmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## How To Use
 

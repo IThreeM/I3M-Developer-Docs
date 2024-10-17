@@ -1,0 +1,5 @@
+.env
+!.github
+book
+.idea
+deps
