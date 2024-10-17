@@ -4,8 +4,6 @@ I3M supports code hot reloading (CHR for short), which allows you to recompile t
 This functionality significantly reduces iteration times and allows rapid prototyping. This way, Rust becomes a sort of
 "scripting" language, but with all Rust safety and performance guarantees:
 
-;; <iframe width="560" height="315" src="https://www.youtube.com/embed/vq6P3Npydmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## How To Use
 
 > ⚠️ If you have an existing project from one of the previous versions of the engine, the best way to add support for
