@@ -9,7 +9,7 @@ The engine offers a set of assets that should cover all of your needs:
 
 - [Models](../resources/model.md) - are a set of objects. They can be a simple 3D model (barrels, bushes, weapons,
 etc.) or complex scenes with lots of objects and possibly other model instances. I3M supports two main formats:
-FBX - which can be used to import 3D models, RGS - which are scenes made in I3M. RGS models are special, as they can be
+FBX - which can be used to import 3D models, i3m - which are scenes made in I3M. i3m models are special, as they can be
 used as _hierarchical prefabs_.
 - [Textures](../resources/texture.md) - are images used to add graphical details to objects. The
 engine supports multiple texture formats, such as PNG, JPG, BMP, etc. Compressed textures in DDS format are also supported.

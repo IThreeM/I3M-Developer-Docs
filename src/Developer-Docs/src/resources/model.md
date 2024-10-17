@@ -5,7 +5,7 @@
 I3M supports these file formats for 3D models:
 
 - FBX - standard game development industry 3D model exchange format
-- RGS - native scenes format produced by I3M (the editor)
+- i3m - native scenes format produced by I3M (the editor)
 
 The list could be extended in the future.
 
@@ -24,7 +24,7 @@ The engine tries to import materials as close as possible to originals in the mo
 because some 3D modelling software could use different shading models. By default, the engine tries to convert
 everything to PBR materials, so if you have a 3D model with a special material made for cartoon shading, the
 engine will still import it as PBR material (with lots of missing textures of course). You should take this into
-account when working with something other than PBR materials. 
+account when working with something other than PBR materials.
 
 In cases when your 3D model have some weird materials, you should create appropriate materials and shaders _manually_,
 the engine is not a magic tool, it has some defaults that do not cover all possible cases.
@@ -34,7 +34,7 @@ and there will be import options right below the model preview:
 
 ![model import](model_import.png)
 
-It is also possible to specify such options manually. To do that, you need to create import options file with the 
+It is also possible to specify such options manually. To do that, you need to create import options file with the
 following content near your 3D model (this is what the editor does for you):
 
 ```text
