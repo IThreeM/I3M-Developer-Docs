@@ -27,7 +27,6 @@ continue making your own game. It is very ambitious, but totally doable with the
 Most of the role-playing games (RPGs for short) using 3rd person camera which allows you to see your character entirely.
 In this tutorial we'll make something similar. Check the video with final result of the tutorial:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/l2ZbDpoIdqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 As you can see, at the end of the tutorial we'll be able to walk and explore a small fantasy world. Let's start by
 creating a new game project, by running the following command:

@@ -15,8 +15,6 @@
 
 In this tutorial, we'll make a character controller for our 2D platformer. Here's what you'll get after finishing the tutorial:
 
-<iframe width="560" height="315" src="https://youtube.com/embed/EcvtwEkBxNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 You can find the source code of the tutorial [here](https://github.com/IThreeM/I3M-Developer-Docs.github.io/tree/main/src/code/tutorials/platformer), you can
 test it yourself by cloning the repository and `cargo run --package editor --release` in the `platformer` directory.
 
