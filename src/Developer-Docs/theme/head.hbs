@@ -1,10 +1,73 @@
-<!-- Google tag (gtag.js) -->
+<!-- Meta Tags for SEO -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{#if page.title}}IThreeM Dev Docs - {{page.title}}{{else}}IThreeM Dev Docs{{/if}}</title>
+<base href="/" />
 <link rel="icon" href="theme/favicon.ico" type="image/x-icon">
+
+<!-- Description and Keywords -->
+<meta name="description" content="IThreeM Developer Docs provide comprehensive documentation for the decentralized IThreeM engine built on ICP. Learn how to leverage secure, scalable, and innovative tools for next-gen game development.">
+<meta name="keywords" content="IThreeM Developer Docs, decentralized game engine, ICP, Rust game engine, IThreeM Engine, game development, blockchain gaming, decentralized applications, ICP gaming, Web3 gaming, decentralized development, IThreeM tools, decentralized gaming infrastructure, Rust programming, game design, decentralized architecture, blockchain for gaming, I3M Developer Docs">
+    
+<!-- Author -->
+<meta name="author" content="IThreeM Team">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="geo.region" content="US">
+<meta name="geo.placename" content="Global">
+<meta name="geo.position" content=";">
+<meta name="ICBM" content=";">
+
+<!-- Open Graph Meta Tags for Social Sharing -->
+<meta property="og:title" content="{{#if page.title}}IThreeM Dev Docs - {{page.title}}{{else}}IThreeM Dev Docs{{/if}}">
+<meta property="og:description" content="The official documentation for IThreeM, a decentralized gaming engine built on ICP. Discover tools for building secure, scalable, and next-gen gaming applications.">
+<meta property="og:image" content="https://ithreem.com/og-image.jpg">
+<meta property="og:url" content="https://docs.ithreem.com">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IThreeM Developer Docs">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{#if page.title}}IThreeM Dev Docs - {{page.title}}{{else}}IThreeM Dev Docs{{/if}}">
+<meta name="twitter:description" content="Official documentation for the decentralized IThreeM Engine built on ICP. Learn how to create scalable and secure games with innovative tools.">
+<meta name="twitter:image" content="https://ithreem.com/twitter-image.jpg">
+<meta name="twitter:site" content="@IThr3M">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://docs.ithreem.com">
+
+<!-- Structured Data for Rich Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "IThreeM",
+  "url": "https://ithreem.com",
+  "logo": "https://ithreem.com/logo.png",
+  "sameAs": [
+    "https://x.com/IThr3M",
+    "https://www.linkedin.com/company/i-three-m"
+  ],
+  "description": "IThreeM is a decentralized gaming engine designed to empower developers with the tools needed to build secure, scalable, and next-gen applications on the Internet Computer Protocol (ICP).",
+  "founder": {
+    "@type": "Person",
+    "name": "Dedan Okware"
+  },
+  "foundingDate": "2024",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "support@ithreem.com"
+  }
+}
+</script>
+
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ETGWNBR03Y"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-ETGWNBR03Y');
 </script>
